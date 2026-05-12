@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstraped Developer Portfolio Homepage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&amp;family=Inter:wght@300;400;500;600;700;800&amp;display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+  </head>
+
+  <body>
+    <!-- HEADER & NAVIGATION -->
+    <header>
+      <nav>
+        <a href="#home" class="logo">DEV_PORTFOLIO</a>
+        <ul class="nav-center">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-right">
+          <button class="cta-button" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Get Started</button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <div class="hero-label">
+          <span class="status-dot"></span>
+          Available for Projects
+        </div>
+
+        <h1>Full-Stack Developer & <span class="highlight">Cloud Architect</span></h1>
+
+        <p class="hero-subtitle">Building scalable, high-performance web applications with modern technologies. Specialized in React, Node.js, TypeScript, and cloud infrastructure.</p>
+
+        <div class="code-block">
+          <span class="keyword">const</span> developer = {<br>
+          &nbsp;&nbsp;name: <span class="string">"Ahmad H."</span>,<br>
+          &nbsp;&nbsp;skills: [<span class="string">"React"</span>, <span class="string">"Node.js"</span>, <span class="string">"TypeScript"</span>, <span class="string">"AWS"</span>],<br>
+          &nbsp;&nbsp;experience: <span class="string">"5+ years"</span>,<br>
+          &nbsp;&nbsp;status: <span class="string">"Open to opportunities"</span><br>
+          };
+        </div>
+
+        <div class="hero-buttons">
+          <button class="btn btn-primary" onclick="document.getElementById('projects').scrollIntoView({behavior: 'smooth'})">
+            View My Work
+            <span>→</span>
+          </button>
+          <button class="btn btn-secondary" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">
+            Contact Me
+          </button>
+        </div>
+
+        <div class="tech-stack">
+          <span class="tech-badge">React</span>
+          <span class="tech-badge">Node.js</span>
+          <span class="tech-badge">TypeScript</span>
+          <span class="tech-badge">AWS</span>
+          <span class="tech-badge">PostgreSQL</span>
+          <span class="tech-badge">Docker</span>
+          <span class="tech-badge">GraphQL</span>
+          <span class="tech-badge">Kubernetes</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about">
+      <div class="section-header">
+        <div class="section-label">About Me</div>
+        <h2 class="section-title">Who I Am</h2>
+      </div>
+
+      <div class="about-grid">
+        <div>
+          <p>I'm a passionate full-stack developer with 5+ years of experience building enterprise-level applications. My expertise spans from frontend development with React and Vue.js to backend architecture with Node.js and Python.</p>
+          <p>I specialize in creating scalable, maintainable solutions that solve real business problems. I'm deeply committed to clean code, best practices, and continuous learning.</p>
+          <p>When I'm not coding, I contribute to open-source projects, write technical blogs, and mentor junior developers in the community.</p>
+
+          <div class="stats-grid">
+            <div class="stat-box">
+              <div class="stat-number">50+</div>
+              <div class="stat-label">Projects Delivered</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-number">30+</div>
+              <div class="stat-label">Happy Clients</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-number">5+</div>
+              <div class="stat-label">Years Experience</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-number">100%</div>
+              <div class="stat-label">Satisfaction Rate</div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="skills-grid">
+            <div class="skill-category">
+              <h4>Frontend</h4>
+              <div class="skill-tags">
+                <span class="skill-tag">React 18+</span>
+                <span class="skill-tag">TypeScript</span>
+                <span class="skill-tag">Next.js</span>
+                <span class="skill-tag">Tailwind CSS</span>
+                <span class="skill-tag">Redux</span>
+                <span class="skill-tag">Vue.js</span>
+              </div>
+            </div>
+
+            <div class="skill-category">
+              <h4>Backend</h4>
+              <div class="skill-tags">
+                <span class="skill-tag">Node.js</span>
+                <span class="skill-tag">Express</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">Django</span>
+                <span class="skill-tag">GraphQL</span>
+                <span class="skill-tag">REST APIs</span>
+              </div>
+            </div>
+
+            <div class="skill-category">
+              <h4>Databases</h4>
+              <div class="skill-tags">
+                <span class="skill-tag">PostgreSQL</span>
+                <span class="skill-tag">MongoDB</span>
+                <span class="skill-tag">Redis</span>
+                <span class="skill-tag">Firebase</span>
+                <span class="skill-tag">DynamoDB</span>
+                <span class="skill-tag">Elasticsearch</span>
+              </div>
+            </div>
+
+            <div class="skill-category">
+              <h4>DevOps & Cloud</h4>
+              <div class="skill-tags">
+                <span class="skill-tag">AWS</span>
+                <span class="skill-tag">Docker</span>
+                <span class="skill-tag">Kubernetes</span>
+                <span class="skill-tag">CI/CD</span>
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">Jenkins</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="projects">
+      <div class="section-header">
+        <div class="section-label">Portfolio</div>
+        <h2 class="section-title">Featured Projects</h2>
+      </div>
+
+      <div class="projects-grid">
+        <div class="project-card fade-in">
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-shopping-cart"></i></div>
+            <h3 class="project-title">E-Commerce Platform</h3>
+            <span class="project-status">Live</span>
+          </div>
+          <div class="project-content">
+            <p class="project-description">Full-featured e-commerce platform with real-time inventory management, payment processing, and advanced analytics dashboard.</p>
+            <div class="project-meta">
+              <div class="project-tags">
+                <span class="project-tag">React</span>
+                <span class="project-tag">Node.js</span>
+                <span class="project-tag">PostgreSQL</span>
+                <span class="project-tag">Stripe</span>
+              </div>
+              <a href="#" class="project-link">View →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card fade-in">
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-chart-bar"></i></div>
+            <h3 class="project-title">Analytics Dashboard</h3>
+            <span class="project-status">Live</span>
+          </div>
+          <div class="project-content">
+            <p class="project-description">Real-time data visualization platform with interactive charts, custom reports, and predictive analytics using machine learning.</p>
+            <div class="project-meta">
+              <div class="project-tags">
+                <span class="project-tag">React</span>
+                <span class="project-tag">D3.js</span>
+                <span class="project-tag">Python</span>
+                <span class="project-tag">AWS</span>
+              </div>
+              <a href="#" class="project-link">View →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card fade-in">
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-rocket"></i></div>
+            <h3 class="project-title">SaaS Platform</h3>
+            <span class="project-status">Live</span>
+          </div>
+          <div class="project-content">
+            <p class="project-description">Cloud-based SaaS application with multi-tenant architecture, subscription management, and enterprise-grade security.</p>
+            <div class="project-meta">
+              <div class="project-tags">
+                <span class="project-tag">Next.js</span>
+                <span class="project-tag">AWS</span>
+                <span class="project-tag">Prisma</span>
+                <span class="project-tag">Stripe</span>
+              </div>
+              <a href="#" class="project-link">View →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card fade-in">
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-shield-alt"></i></div>
+            <h3 class="project-title">Security Monitoring Tool</h3>
+            <span class="project-status">Live</span>
+          </div>
+          <div class="project-content">
+            <p class="project-description">Advanced security monitoring platform with threat detection, vulnerability scanning, and compliance reporting for enterprises.</p>
+            <div class="project-meta">
+              <div class="project-tags">
+                <span class="project-tag">Node.js</span>
+                <span class="project-tag">Python</span>
+                <span class="project-tag">Kubernetes</span>
+                <span class="project-tag">PostgreSQL</span>
+              </div>
+              <a href="#" class="project-link">View →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card fade-in">
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-mobile-alt"></i></div>
+            <h3 class="project-title">Mobile App</h3>
+            <span class="project-status">Live</span>
+          </div>
+          <div class="project-content">
+            <p class="project-description">Cross-platform mobile application with offline support, push notifications, and real-time synchronization across devices.</p>
+            <div class="project-meta">
+              <div class="project-tags">
+                <span class="project-tag">React Native</span>
+                <span class="project-tag">Firebase</span>
+                <span class="project-tag">Redux</span>
+                <span class="project-tag">TypeScript</span>
+              </div>
+              <a href="#" class="project-link">View →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact">
+      <div class="section-header">
+        <div class="section-label">Get In Touch</div>
+        <h2 class="section-title">Let's Work Together</h2>
+        <p class="section-description">Have a project in mind? I'd love to hear about it. Fill out the form below and I'll get back to you within 24 hours.</p>
+      </div>
+
+      <form class="contact-form" onsubmit="handleSubmit(event)">
+        <div class="form-group half">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" placeholder="John Doe" required>
+        </div>
+        <div class="form-group half">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="john@example.com" required>
+        </div>
+        <div class="form-group">
+          <label for="subject">Project Type</label>
+          <input type="text" id="subject" name="subject" placeholder="Web App, Mobile App, etc." required>
+        </div>
+        <div class="form-group">
+          <label for="message">Project Details</label>
+          <textarea id="message" name="message" placeholder="Tell me about your project, timeline, and budget..." required></textarea>
+        </div>
+        <button type="submit" class="form-submit">Send Message</button>
+      </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="#">GitHub</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Email</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Resume</a></li>
+            <li><a href="#">Case Studies</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Kanak Bajaj Developer. All rights reserved. | Built with React, Node.js & AWS</p>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
